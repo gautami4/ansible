@@ -1,0 +1,15 @@
+- name: variables from prompt
+  hosts: local
+  connection: local
+  tasks:
+    - name: COURSE
+      prompt: please enter course name
+      private: false # it is not confidential info
+
+    - name: DURATION
+      prompt: please enter the duration
+      private: false
+
+    - name: TRAINER
+      prompt: please enter trainer name
+      private: false   
