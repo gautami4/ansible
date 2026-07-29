@@ -12,7 +12,7 @@
 
   
     - name: print the task level vars
-      vars:
+      vars: #task level vars
         TRAINER: Govardhan
         DURATION: "5 hrs"
       ansible.builtin.debug:
