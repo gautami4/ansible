@@ -10,11 +10,12 @@
       ansible.builtin.debug:
         msg: " course is {{COURSE}} ,duration {{DURATION}}  "
 
-  tasks:
-    vars:
+  
+    
+    - name: print the task(global) variables
+      vars:
       TRAINER: Govardhan
       COURSE: ansible
-      DURATION: 5 Hrs
-    - name: print the task(global) variables
+      DURATION: "5 Hrs"
       ansible.builtin.debug:
-        msg: " course is {{COURSE}} ,duration {{DURATION}} , {{TRAINER}} "      
+       msg: " course is {{COURSE}} ,duration {{DURATION}} , {{TRAINER}} "      
