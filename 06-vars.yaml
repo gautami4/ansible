@@ -1,7 +1,7 @@
 - name: variables
   hosts: local
   connection: local
-  vars:
+  vars: #task level vars (global)
    COURSE: "DEVOPS"
    DURATION: "120 HOURS"
 
@@ -9,3 +9,12 @@
     - name: print the task(global) variables
       ansible.builtin.debug:
         msg: " course is {{COURSE}} ,duration {{DURATION}}  "
+
+  tasks:
+    vars:
+      TRAINER: Govardhan
+      COURSE: ansible
+      DURATION: 5 Hrs
+    - name: print the task(global) variables
+      ansible.builtin.debug:
+        msg: " course is {{COURSE}} ,duration {{DURATION}}  "      
