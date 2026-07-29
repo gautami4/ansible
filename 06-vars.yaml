@@ -17,4 +17,4 @@
       DURATION: 5 Hrs
     - name: print the task(global) variables
       ansible.builtin.debug:
-        msg: " course is {{COURSE}} ,duration {{DURATION}}  "      
+        msg: " course is {{COURSE}} ,duration {{DURATION}} , {{TRAINER}} "      
