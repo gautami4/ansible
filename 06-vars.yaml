@@ -13,6 +13,8 @@
   
     - name: print the task level vars
       vars:
+        COURSE: ansible
         TRAINER: Govardhan
+        DURATION: "5 hrs"
       ansible.builtin.debug:
        msg: " course is {{COURSE}} ,duration {{DURATION}} ,trainer {{TRAINER}}  "
