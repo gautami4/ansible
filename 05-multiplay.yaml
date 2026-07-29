@@ -1,0 +1,11 @@
+- name: play1
+  hosts: local
+  connection: local #manages its own node no need of password
+  tasks:
+    - name: play and print task1
+      ansible.buitin.debug:
+        msg: "hello from task1"
+
+    - name: play and print task2
+      ansible.buitin.debug:
+        msg: "hello from task2"    
