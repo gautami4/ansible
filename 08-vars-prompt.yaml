@@ -12,7 +12,7 @@
 
     - name: TRAINER
       prompt: please enter trainer name
-      private: false   
+       
 
   tasks:
     - name: print prompt variables
