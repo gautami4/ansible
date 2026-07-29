@@ -10,8 +10,8 @@
     prompt: enter the value
     private: false
   tasks:
-    - name: print the play level variables
-      vars: 
-        GREET: "task level"
-      ansible.builtin.debug:
-        msg: "hello from {{PLAY}}"
+  - name: print the play level variables
+    vars: 
+      GREET: "task level"
+    ansible.builtin.debug:
+      msg: "hello from {{PLAY}}"
